@@ -68,7 +68,7 @@ export default function Header({ onOpenAdmin }: HeaderProps) {
             <a
               key={item.label}
               href={item.href}
-              className="group relative text-[11px] uppercase tracking-[0.2em] font-medium text-text hover:text-brand-gold transition-colors duration-300"
+              className="group relative text-xs font-semibold uppercase tracking-[0.2em] font-medium text-text hover:text-brand-gold transition-colors duration-300"
             >
               {item.label}
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-brand-gold transition-all duration-300 group-hover:w-full" />
@@ -76,7 +76,7 @@ export default function Header({ onOpenAdmin }: HeaderProps) {
           ))}
           <a
             href="#reservations"
-            className="px-6 py-2 border border-brand-gold text-brand-gold text-[10px] uppercase tracking-[0.2em] font-semibold hover:bg-brand-gold hover:text-bg transition-all duration-500"
+            className="px-6 py-2 border border-brand-gold text-brand-gold text-xs font-semibold tracking-wider uppercase tracking-[0.2em] font-semibold hover:bg-brand-gold hover:text-bg transition-all duration-500"
           >
             Book a Table
           </a>
@@ -138,7 +138,7 @@ export default function Header({ onOpenAdmin }: HeaderProps) {
                   <Instagram size={20} />
                   <span className="text-xs uppercase tracking-[0.3em] font-bold">{templateData.social.instagram}</span>
                 </div>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-brand-gold/40">© {new Date().getFullYear()} {templateData.brand.name}</p>
+                <p className="text-xs font-semibold tracking-wider uppercase tracking-[0.2em] text-brand-gold/40">© {new Date().getFullYear()} {templateData.brand.name}</p>
               </motion.div>
             </div>
           </motion.div>

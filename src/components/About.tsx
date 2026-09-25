@@ -59,7 +59,7 @@ export default function About() {
                   className="flex flex-col"
                 >
                   <p className="text-brand-gold text-3xl font-serif mb-2">2024</p>
-                  <p className="text-text/40 uppercase tracking-[0.2em] text-[10px] font-bold">
+                  <p className="text-text/40 uppercase tracking-[0.2em] text-xs font-semibold tracking-wider font-bold">
                     Established
                   </p>
                 </motion.div>
@@ -71,7 +71,7 @@ export default function About() {
                   className="flex flex-col"
                 >
                   <p className="text-brand-gold text-3xl font-serif mb-2">3x</p>
-                  <p className="text-text/40 uppercase tracking-[0.2em] text-[10px] font-bold">
+                  <p className="text-text/40 uppercase tracking-[0.2em] text-xs font-semibold tracking-wider font-bold">
                     James Beard Nom
                   </p>
                 </motion.div>
@@ -83,7 +83,7 @@ export default function About() {
                   className="flex flex-col"
                 >
                   <p className="text-brand-gold text-3xl font-serif mb-2">LA</p>
-                  <p className="text-text/40 uppercase tracking-[0.2em] text-[10px] font-bold">
+                  <p className="text-text/40 uppercase tracking-[0.2em] text-xs font-semibold tracking-wider font-bold">
                     Roots
                   </p>
                 </motion.div>
@@ -142,7 +142,7 @@ export default function About() {
               transition={{ duration: 0.8 }}
               className="flex-1"
             >
-              <span className="text-brand-burgundy uppercase tracking-[0.4em] text-[10px] font-bold mb-4 block">The Soul in the Kitchen</span>
+              <span className="text-brand-burgundy uppercase tracking-[0.4em] text-xs font-semibold tracking-wider font-bold mb-4 block">The Soul in the Kitchen</span>
               <h2 className="text-5xl font-serif mb-6 text-text">{templateData.chef.name}</h2>
               <p className="text-brand-gold uppercase tracking-[0.2em] text-xs font-bold mb-8">
                 {templateData.chef.role}

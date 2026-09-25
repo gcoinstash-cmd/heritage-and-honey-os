@@ -26,7 +26,7 @@ export default function Features() {
           </div>
           <a
             href="#menu"
-            className="text-[10px] font-bold uppercase tracking-[0.3em] border border-border px-8 py-3 hover:bg-brand-gold hover:text-bg transition-all duration-500"
+            className="text-xs font-semibold tracking-wider font-bold uppercase tracking-[0.3em] border border-border px-8 py-3 hover:bg-brand-gold hover:text-bg transition-all duration-500"
           >
             Explore Menu
           </a>
@@ -64,7 +64,7 @@ export default function Features() {
               </div>
               <div className="mt-8 pt-6 border-t border-border flex justify-between items-center">
                  <span className="text-brand-gold font-serif text-2xl">${item.price}</span>
-                 <span className="text-[10px] uppercase tracking-widest text-brand-gold/30">Order Now</span>
+                 <span className="text-xs font-semibold tracking-wider uppercase tracking-widest text-brand-gold/30">Order Now</span>
               </div>
             </motion.div>
           ))}

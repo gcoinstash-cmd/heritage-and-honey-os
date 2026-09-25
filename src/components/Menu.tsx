@@ -46,7 +46,7 @@ export default function Menu() {
         <div className="text-center mb-16">
           <h2 className="text-6xl md:text-[80px] text-text mb-6 leading-none tracking-tighter">The Menu</h2>
           <div className="w-16 h-px bg-brand-burgundy mx-auto mb-8" />
-          <p className="text-brand-gold/40 uppercase tracking-[0.4em] text-[10px] font-bold mb-12">
+          <p className="text-brand-gold/40 uppercase tracking-[0.4em] text-xs font-semibold tracking-wider font-bold mb-12">
             Curated Heirloom Selections
           </p>
 
@@ -148,7 +148,7 @@ export default function Menu() {
         </LayoutGroup>
 
         <div className="mt-32 text-center">
-           <p className="text-[10px] text-brand-gold/30 uppercase tracking-widest max-w-lg mx-auto leading-loose">
+           <p className="text-xs font-semibold tracking-wider text-brand-gold/30 uppercase tracking-widest max-w-lg mx-auto leading-loose">
              *Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.
            </p>
         </div>

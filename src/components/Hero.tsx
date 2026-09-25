@@ -45,7 +45,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-brand-gold font-sans font-semibold uppercase tracking-[0.4em] mb-8 text-[10px]"
+            className="text-brand-gold font-sans font-semibold uppercase tracking-[0.4em] mb-8 text-xs font-semibold tracking-wider"
           >
             {templateData.brand.tagline}
           </motion.p>
@@ -82,7 +82,7 @@ export default function Hero() {
               href="#reservations"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              className="relative overflow-hidden px-8 py-4 bg-brand-gold text-brand-charcoal uppercase tracking-[0.2em] text-[10px] font-bold hover:bg-brand-burgundy hover:text-brand-cream transition-all duration-500 text-center group"
+              className="relative overflow-hidden px-8 py-4 bg-brand-gold text-brand-charcoal uppercase tracking-[0.2em] text-xs font-semibold tracking-wider font-bold hover:bg-brand-burgundy hover:text-brand-cream transition-all duration-500 text-center group"
             >
               <span className="relative z-10">Book a Table</span>
               {/* Shimmer Effect */}
@@ -101,7 +101,7 @@ export default function Hero() {
             </motion.a>
             <a
               href="#menu"
-              className="px-8 py-4 border border-brand-stone text-brand-cream uppercase tracking-[0.2em] text-[10px] font-bold hover:bg-brand-cream hover:text-brand-charcoal transition-all duration-500 text-center"
+              className="px-8 py-4 border border-brand-stone text-brand-cream uppercase tracking-[0.2em] text-xs font-semibold tracking-wider font-bold hover:bg-brand-cream hover:text-brand-charcoal transition-all duration-500 text-center"
             >
               Explore Menu
             </a>
@@ -119,7 +119,7 @@ export default function Hero() {
         <motion.span 
           animate={{ opacity: [0.3, 0.8, 0.3] }}
           transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
-          className="text-[10px] text-brand-gold/50 uppercase tracking-[0.4em] rotate-180 [writing-mode:vertical-lr] font-bold"
+          className="text-xs font-semibold tracking-wider text-brand-gold/50 uppercase tracking-[0.4em] rotate-180 [writing-mode:vertical-lr] font-bold"
         >
           Scroll to Explore
         </motion.span>

@@ -63,7 +63,7 @@ export default function Journal() {
                 <p className="text-brand-gold/60 text-sm font-light italic leading-relaxed line-clamp-2">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center gap-2 pt-2 text-brand-burgundy text-[10px] uppercase tracking-widest font-bold group-hover:gap-4 transition-all duration-300">
+                <div className="flex items-center gap-2 pt-2 text-brand-burgundy text-xs font-semibold tracking-wider uppercase tracking-widest font-bold group-hover:gap-4 transition-all duration-300">
                   Read Article <ArrowRight size={14} />
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function Journal() {
                 </div>
                 
                 <div className="p-8 md:p-16">
-                  <div className="flex items-center gap-6 text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold mb-8 opacity-60">
+                  <div className="flex items-center gap-6 text-xs font-semibold tracking-wider uppercase tracking-[0.3em] text-brand-gold font-bold mb-8 opacity-60">
                     <span className="flex items-center gap-2"><Calendar size={12} /> {selectedPost.date}</span>
                     <span className="flex items-center gap-2"><User size={12} /> {selectedPost.author}</span>
                     <span className="px-3 py-1 border border-brand-gold/30">{selectedPost.category}</span>
@@ -135,11 +135,11 @@ export default function Journal() {
                   <div className="mt-20 pt-10 border-t border-border flex justify-between items-center">
                     <div className="flex items-center gap-4">
                       <div className="w-10 h-px bg-brand-stone" />
-                      <p className="text-[10px] uppercase tracking-widest text-brand-gold/40 font-bold">End of Dispatch</p>
+                      <p className="text-xs font-semibold tracking-wider uppercase tracking-widest text-brand-gold/40 font-bold">End of Dispatch</p>
                     </div>
                     <button 
                       onClick={() => setSelectedPost(null)}
-                      className="text-brand-burgundy text-[10px] uppercase tracking-widest font-bold hover:tracking-[0.2em] transition-all"
+                      className="text-brand-burgundy text-xs font-semibold tracking-wider uppercase tracking-widest font-bold hover:tracking-[0.2em] transition-all"
                     >
                       Return to Journal
                     </button>

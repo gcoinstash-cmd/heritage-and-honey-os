@@ -71,7 +71,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ x: 4 }}
-                className="inline-flex items-center gap-3 text-brand-gold hover:text-text transition-colors text-[10px] uppercase tracking-[0.2em] font-bold"
+                className="inline-flex items-center gap-3 text-brand-gold hover:text-text transition-colors text-xs font-semibold tracking-wider uppercase tracking-[0.2em] font-bold"
               >
                 Follow {templateData.social.instagram.toUpperCase()}
                 <Instagram size={14} />
@@ -117,13 +117,13 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-border pt-12 flex flex-col md:flex-row justify-between items-center gap-8">
-          <p className="text-brand-gold/20 text-[10px] uppercase tracking-[0.5em] font-bold">
+          <p className="text-brand-gold/20 text-xs font-semibold tracking-wider uppercase tracking-[0.5em] font-bold">
             © {new Date().getFullYear()} {templateData.brand.name}. Crafted for Modern Traditions.
           </p>
           
           <button 
             onClick={scrollToTop}
-            className="group flex items-center gap-3 text-brand-gold/40 hover:text-text transition-colors uppercase tracking-[0.4em] text-[10px] font-bold"
+            className="group flex items-center gap-3 text-brand-gold/40 hover:text-text transition-colors uppercase tracking-[0.4em] text-base font-semibold min-h-[44px] font-semibold tracking-wider font-bold"
           >
             Back to Top
             <ArrowUp size={14} className="group-hover:-translate-y-1 transition-transform" />

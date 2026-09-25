@@ -48,7 +48,7 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
   const statusColors: Record<string, string> = {
     'seated': 'text-amber-400 bg-amber-400/10 border-amber-400/30',
     'confirmed': 'text-emerald-400 bg-emerald-400/10 border-emerald-400/30',
-    'pending': 'text-zinc-500 bg-zinc-500/10 border-zinc-700',
+    'pending': 'text-zinc-300 bg-zinc-500/10 border-zinc-700',
     'cancelled': 'text-red-400 bg-red-400/10 border-red-400/30',
   };
 
@@ -87,7 +87,7 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                 <input type="password" value={passkey} onChange={(e) => setPasskey(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && handleAuth()}
                   placeholder="Enter passkey..." className="w-full bg-amber-950/20 border border-amber-900/40 rounded-lg px-4 py-3 text-sm text-amber-100 font-mono focus:outline-none focus:border-amber-500/50 placeholder:text-amber-900/50" />
                 {authError && <p className="text-xs text-red-400 font-mono">{authError}</p>}
-                <button onClick={handleAuth} className="w-full rounded-lg bg-amber-500 py-3 text-sm font-bold uppercase tracking-wider text-black hover:bg-amber-400 transition-all cursor-pointer">Enter Parlour</button>
+                <button onClick={handleAuth} className="w-full rounded-lg bg-amber-500 py-3 text-base font-bold min-h-[44px] uppercase tracking-wider text-black hover:bg-amber-400 transition-all cursor-pointer">Enter Parlour</button>
                 <button onClick={() => { setPasskey(PASSKEY); setAuthError(''); }} className="w-full rounded-lg border border-amber-500/30 bg-amber-500/5 py-2.5 text-xs font-mono text-amber-400 hover:bg-amber-500/10 transition-all cursor-pointer">
                   [ 1-CLICK DEMO AUTO-FILL: heritage2026 ]
                 </button>
@@ -117,7 +117,7 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                       <div key={label} className="rounded-xl border border-amber-900/30 bg-amber-950/20 p-4 space-y-2">
                         <Icon className={`h-4 w-4 ${color}`} />
                         <p className={`text-xl font-serif ${color}`}>{value}</p>
-                        <p className="text-[10px] text-amber-700 uppercase tracking-wider">{label}</p>
+                        <p className="text-xs font-semibold tracking-wider text-amber-700 uppercase tracking-wider">{label}</p>
                       </div>
                     ))}
                   </div>
@@ -129,10 +129,10 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                           <Clock className="h-3.5 w-3.5 text-amber-800" />
                           <div>
                             <p className="text-xs font-medium text-amber-100">{r.name} ({r.party} guests)</p>
-                            <p className="text-[10px] text-amber-700 font-mono">{r.date} · {r.table}</p>
+                            <p className="text-xs font-semibold tracking-wider text-amber-700 font-mono">{r.date} · {r.table}</p>
                           </div>
                         </div>
-                        <span className={`text-[10px] font-mono px-2 py-0.5 rounded border uppercase ${statusColors[r.status]}`}>{r.status}</span>
+                        <span className={`text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded border uppercase ${statusColors[r.status]}`}>{r.status}</span>
                       </div>
                     ))}
                   </div>
@@ -145,8 +145,8 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                     <div key={r.id} className="rounded-xl border border-amber-900/30 bg-amber-950/20 p-4 flex items-center justify-between gap-3">
                       <div className="space-y-1">
                         <div className="flex items-center gap-2">
-                          <span className="text-[10px] font-mono text-amber-800">{r.id}</span>
-                          <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded border uppercase ${statusColors[r.status]}`}>{r.status}</span>
+                          <span className="text-xs font-semibold tracking-wider font-mono text-amber-800">{r.id}</span>
+                          <span className={`text-xs font-semibold tracking-wider font-mono px-1.5 py-0.5 rounded border uppercase ${statusColors[r.status]}`}>{r.status}</span>
                         </div>
                         <p className="text-sm font-serif text-amber-100">{r.name} — Party of {r.party}</p>
                         <p className="text-xs text-amber-700 font-mono">{r.date} · {r.table}</p>
@@ -172,7 +172,7 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                         <span className="text-xs font-serif text-amber-200">{t.name}</span>
                         <span className={`text-[9px] font-mono uppercase ${t.status === 'occupied' ? 'text-amber-400' : t.status === 'reserved' ? 'text-amber-600' : 'text-emerald-400'}`}>{t.status}</span>
                       </div>
-                      <p className="text-[10px] text-amber-800 font-mono">Cap: {t.capacity} · {t.status === 'occupied' ? `${t.guests} seated` : 'Open'}</p>
+                      <p className="text-xs font-semibold tracking-wider text-amber-800 font-mono">Cap: {t.capacity} · {t.status === 'occupied' ? `${t.guests} seated` : 'Open'}</p>
                     </div>
                   ))}
                 </div>

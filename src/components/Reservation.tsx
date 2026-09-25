@@ -50,7 +50,7 @@ export default function Reservation() {
         <div className="flex flex-col lg:flex-row gap-16 items-stretch">
           
           <div className="flex-1 flex flex-col justify-center pt-8 md:pt-12 lg:pt-0 min-w-0 w-full">
-            <span className="text-[10px] uppercase tracking-[0.5em] text-brand-gold font-bold mb-6 block">Availability</span>
+            <span className="text-xs font-semibold tracking-wider uppercase tracking-[0.5em] text-brand-gold font-bold mb-6 block">Availability</span>
             <h2 className="text-6xl md:text-[84px] text-text mb-8 leading-[0.9] tracking-tighter break-words">
               Secure <br /> the <span className="text-brand-burgundy italic">Evening</span>
             </h2>
@@ -62,14 +62,14 @@ export default function Reservation() {
                <div className="flex items-center gap-6 min-w-0">
                   <div className="h-12 w-[1px] bg-brand-burgundy shrink-0"></div>
                   <div className="min-w-0">
-                    <p className="text-[10px] uppercase tracking-[0.3em] text-brand-gold mb-1 font-bold">Establishment</p>
+                    <p className="text-xs font-semibold tracking-wider uppercase tracking-[0.3em] text-brand-gold mb-1 font-bold">Establishment</p>
                     <p className="text-text font-serif text-lg break-words">{templateData.contact.address}</p>
                   </div>
                </div>
                <div className="flex items-center gap-6 min-w-0">
                   <div className="h-12 w-[1px] bg-brand-gold shrink-0"></div>
                   <div className="min-w-0">
-                    <p className="text-[10px] uppercase tracking-[0.3em] text-brand-gold mb-1 font-bold">Direct Line</p>
+                    <p className="text-xs font-semibold tracking-wider uppercase tracking-[0.3em] text-brand-gold mb-1 font-bold">Direct Line</p>
                     <p className="text-text font-serif text-lg break-words">{templateData.contact.phone}</p>
                   </div>
                </div>
@@ -89,7 +89,7 @@ export default function Reservation() {
                 >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
-                      <label className="block text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold mb-3 opacity-60">Guest Name</label>
+                      <label className="block text-sm font-semibold tracking-wider uppercase tracking-[0.3em] text-brand-gold font-bold mb-3 opacity-60">Guest Name</label>
                       <input
                         required
                         type="text"
@@ -98,7 +98,7 @@ export default function Reservation() {
                       />
                     </div>
                     <div>
-                      <label className="block text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold mb-3 opacity-60">Email Address</label>
+                      <label className="block text-sm font-semibold tracking-wider uppercase tracking-[0.3em] text-brand-gold font-bold mb-3 opacity-60">Email Address</label>
                       <input
                         required
                         type="email"
@@ -110,7 +110,7 @@ export default function Reservation() {
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="relative">
-                      <label className="block text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold mb-3 opacity-60">Date</label>
+                      <label className="block text-sm font-semibold tracking-wider uppercase tracking-[0.3em] text-brand-gold font-bold mb-3 opacity-60">Date</label>
                       <input
                         required
                         type="date"
@@ -121,7 +121,7 @@ export default function Reservation() {
                       </div>
                     </div>
                     <div className="relative">
-                      <label className="block text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold mb-3 opacity-60">Time Slot</label>
+                      <label className="block text-sm font-semibold tracking-wider uppercase tracking-[0.3em] text-brand-gold font-bold mb-3 opacity-60">Time Slot</label>
                       <select
                         required
                         className="w-full bg-transparent border-b border-border text-text py-4 focus:outline-none focus:border-brand-burgundy transition-colors font-light appearance-none text-text cursor-pointer"
@@ -138,7 +138,7 @@ export default function Reservation() {
                       </div>
                     </div>
                     <div className="relative">
-                      <label className="block text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold mb-3 opacity-60">Party Size</label>
+                      <label className="block text-sm font-semibold tracking-wider uppercase tracking-[0.3em] text-brand-gold font-bold mb-3 opacity-60">Party Size</label>
                       <select
                         required
                         className="w-full bg-transparent border-b border-border text-text py-4 focus:outline-none focus:border-brand-burgundy transition-colors font-light appearance-none text-text cursor-pointer"
@@ -158,7 +158,7 @@ export default function Reservation() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-5 bg-brand-gold text-bg uppercase tracking-[0.4em] text-[10px] font-bold hover:bg-brand-burgundy hover:text-text transition-all duration-700 mt-4 disabled:opacity-70 disabled:cursor-wait flex items-center justify-center gap-3"
+                    className="w-full py-5 bg-brand-gold text-bg uppercase tracking-[0.4em] text-base font-semibold min-h-[44px] font-semibold tracking-wider font-bold hover:bg-brand-burgundy hover:text-text transition-all duration-700 mt-4 disabled:opacity-70 disabled:cursor-wait flex items-center justify-center gap-3"
                   >
                     {isSubmitting ? (
                       <>
@@ -199,7 +199,7 @@ export default function Reservation() {
                       href="#"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="inline-flex items-center justify-center gap-3 py-4 border border-brand-gold text-brand-gold uppercase tracking-[0.2em] text-[10px] font-bold hover:bg-brand-gold hover:text-bg transition-all duration-300"
+                      className="inline-flex items-center justify-center gap-3 py-4 border border-brand-gold text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold tracking-wider font-bold hover:bg-brand-gold hover:text-bg transition-all duration-300"
                     >
                       <CalendarPlus size={14} />
                       Add to Calendar
